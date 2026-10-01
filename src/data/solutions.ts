@@ -10,7 +10,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Microserviço completo em Node.js/TypeScript e Docker para processar pagamentos PIX instantâneos sem depender de plataformas caras ou sofrer com instabilidade de webhooks.',
     status: 'Pré-venda PDI',
     pdiBadge: 'PDI 2026.1 • Backend Resiliente',
-    priceFrom: 'R$ 197',
+    priceFrom: 'R$ 490',
     problem: 'Intermediários tradicionais cobram mensalidades abusivas e taxas percentuais por transação que drenam o lucro da operação. Além disso, a maioria das implementações caseiras sofre com notificações bancárias perdidas, falta de idempotência e travamentos sob picos de pagamentos simultâneos.',
     solution: 'Um microserviço autônomo, desacoplado e containerizado em Docker. Ele lida com a geração do QR Code Copia e Cola, confirmação em tempo real, validação rigorosa de assinatura HMAC e despacho idempotente para suas aplicações via fila.',
     features: [
@@ -26,8 +26,8 @@ export const solutionsData: SolutionItem[] = [
     plans: [
       {
         name: 'Licença Código-Fonte (Pré-venda PDI)',
-        price: 'R$ 197',
-        period: 'pagamento único',
+        price: 'R$ 490',
+        period: 'valor de pré-venda (R$ 890 no lançamento)',
         description: 'Acesso completo ao repositório Git com código-fonte em TypeScript, testes e documentação OpenAPI.',
         features: [
           'Código-fonte 100% aberto e sem ofuscação',
@@ -41,8 +41,8 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Instalação & Setup Assistido',
-        price: 'R$ 590',
-        period: 'serviço pontual',
+        price: 'R$ 1.490',
+        period: 'serviço pontual com suporte',
         description: 'Implantação completa em seu servidor (VPS, Docker, Cloud) com configuração de banco e SSL.',
         features: [
           'Tudo incluído no plano Código-Fonte',
@@ -55,7 +55,7 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Versão Personalizada',
-        price: 'Sob Consulta',
+        price: 'A partir de R$ 3.500',
         description: 'Adaptação específica da API para as regras de negócio e ERP da sua empresa.',
         features: [
           'Integração direta com seu sistema legado',
@@ -89,7 +89,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Construção ou migração de loja virtual completa em WordPress + WooCommerce na Hostinger. Sem pagar aluguel mensal de plataformas, com checkout transparente, cálculo de frete e alta taxa de conversão.',
     status: 'Disponível',
     pdiBadge: 'E-commerce Engineering',
-    priceFrom: 'R$ 890',
+    priceFrom: 'R$ 2.490',
     problem: 'Plataformas de e-commerce por assinatura (Shopify, Nuvemshop) cobram mensalidades crescentes e taxas sobre cada venda. Por outro lado, lojas WordPress feitas por amadores são lentas, quebram no checkout e não passam confiança ao comprador.',
     solution: 'Uma loja virtual própria, hospedada na Hostinger com arquitetura otimizada por um engenheiro: LiteSpeed Cache ativo, banco MySQL afinado, checkout transparente em 1 etapa e PIX com aprovação instantânea.',
     features: [
@@ -106,26 +106,26 @@ export const solutionsData: SolutionItem[] = [
     plans: [
       {
         name: 'Loja Express',
-        price: 'R$ 890',
-        period: 'entrega em 5 a 7 dias',
-        description: 'Ideal para quem já tem produtos e quer começar a vender online imediatamente com baixo investimento.',
+        price: 'R$ 2.490',
+        period: 'entrega em 7 a 10 dias úteis',
+        description: 'Ideal para quem já tem produtos e quer começar a vender online imediatamente com setup profissional.',
         features: [
           'Instalação e configuração na Hostinger',
           'Checkout Transparente configurado (PIX + Cartão)',
           'Cálculo de frete automático integrado',
-          'Cadastro de até 15 produtos iniciais',
+          'Cadastro de até 20 produtos iniciais',
           'Certificado de Segurança SSL e e-mail profissional'
         ],
         ctaText: 'Contratar Loja Express'
       },
       {
         name: 'Loja Completa + Treinamento',
-        price: 'R$ 1.490',
-        period: 'entrega em 10 a 14 dias',
+        price: 'R$ 3.890',
+        period: 'entrega em 12 a 15 dias úteis',
         description: 'Solução completa para empresas que buscam alta performance, cupons, recuperação de carrinho e autonomia.',
         features: [
           'Tudo do plano Loja Express',
-          'Cadastro de até 50 produtos com variações',
+          'Cadastro de até 60 produtos com variações',
           'Otimização avançada de velocidade (nota 90+)',
           'Recuperação de carrinho abandonado via WhatsApp/E-mail',
           'Treinamento em vídeo de 1h ensinando a gerenciar a loja',
@@ -136,7 +136,7 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Customização & Migração',
-        price: 'Sob Consulta',
+        price: 'A partir de R$ 5.900',
         description: 'Migração de outra plataforma ou desenvolvimento de regras de frete/atacado complexas.',
         features: [
           'Migração de catálogo e clientes antigos',
@@ -170,7 +170,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Desenvolvimento de sites institucionais construídos localmente no Laragon com PHP moderno e deploy profissional na Hostinger. Carregamento ultrarrápido (90+ no PageSpeed) e foco em gerar contatos no WhatsApp.',
     status: 'Disponível',
     pdiBadge: 'Web Performance',
-    priceFrom: 'R$ 690',
+    priceFrom: 'R$ 1.490',
     problem: 'Sites institucionais lentos e mal configurados afastam clientes antes mesmo da página carregar. A maioria das agências entrega templates pesados cheios de bugs e com dores de cabeça para atualizar um simples número de telefone.',
     solution: 'Desenvolvemos o site com ambiente local controlado (Laragon), arquitetura limpa de blocos e foco obsessivo em velocidade. Seus visitantes encontram sua proposta de valor em menos de 2 segundos com botão direto para WhatsApp.',
     features: [
@@ -186,12 +186,12 @@ export const solutionsData: SolutionItem[] = [
     plans: [
       {
         name: 'Institucional Express',
-        price: 'R$ 690',
-        period: 'entrega em 3 a 5 dias',
+        price: 'R$ 1.490',
+        period: 'entrega em 5 a 7 dias úteis',
         description: 'Landing Page institucional de página única (One Page) com todas as informações essenciais.',
         features: [
           'Design moderno de alta conversão (One Page)',
-          'Seções: Sobre, Serviços, Depoimentos e Contato',
+          'Seções: Sobre, Serviços, Diferenciais e Contato',
           'Integração direta com WhatsApp e Google Maps',
           'Configuração de hospedagem Hostinger e SSL'
         ],
@@ -199,8 +199,8 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Institucional Pro + Blog',
-        price: 'R$ 1.190',
-        period: 'entrega em 7 a 10 dias',
+        price: 'R$ 2.490',
+        period: 'entrega em 10 a 12 dias úteis',
         description: 'Site multipáginas completo com área de artigos/notícias para fortalecer a autoridade da empresa no Google.',
         features: [
           'Até 5 páginas exclusivas (Início, Sobre, Serviços, Portfólio, Contato)',
@@ -233,7 +233,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Economize até 3 semanas de setup inicial em projetos backend. Arquitetura limpa, tipada e pronta para escalar com TypeScript, Docker e CI/CD.',
     status: 'Disponível',
     pdiBadge: 'PDI 2026 • Arquitetura Limpa',
-    priceFrom: 'R$ 147',
+    priceFrom: 'R$ 297',
     problem: 'Toda nova API exige refazer a mesma infraestrutura básica: configuração de autenticação, refresh tokens, controle de acessos (RBAC), Prisma migrations, validação com Zod/class-validator, Docker Compose e pipeline de CI.',
     solution: 'Um starter kit corporativo maduro, construído com as melhores práticas de Clean Architecture e NestJS, permitindo iniciar o desenvolvimento focado nas regras de negócio desde o primeiro minuto.',
     features: [
@@ -249,8 +249,8 @@ export const solutionsData: SolutionItem[] = [
     plans: [
       {
         name: 'Starter Boilerplate',
-        price: 'R$ 147',
-        period: 'pagamento único',
+        price: 'R$ 297',
+        period: 'pagamento único (licença comercial)',
         description: 'Repositório completo com código limpo, README detalhado e licença comercial.',
         features: [
           'Código-fonte completo e comentado',
@@ -263,8 +263,8 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Starter + Mentoria de Arquitetura (1h)',
-        price: 'R$ 490',
-        period: 'call individual',
+        price: 'R$ 890',
+        period: 'código + call individual de 1h',
         description: 'Além do código, receba 1 hora de mentoria individual para discutir a arquitetura da sua aplicação.',
         features: [
           'Tudo do plano Starter Boilerplate',
@@ -295,7 +295,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Abstraia toda a complexidade de comunicação com a SEFAZ. Envie um JSON simples e o microserviço cuida da assinatura do Certificado Digital A1, geração do XML e retorno do DANFE em PDF.',
     status: 'Pré-venda PDI',
     pdiBadge: 'PDI 2026.2 • Soluções Fiscais',
-    priceFrom: 'R$ 297',
+    priceFrom: 'R$ 690',
     problem: 'Integrar faturamento fiscal é um dos maiores pesadelos para desenvolvedores: schemas XML rígidos da SEFAZ, manipulação de certificados digitais e quedas frequentes dos servidores estaduais exigindo fila de contingência.',
     solution: 'Um microserviço especializado que traduz requisições REST simples em notas autorizadas pela SEFAZ, com fila de contingência e armazenamento de XMLs e PDFs gerados.',
     features: [
@@ -308,9 +308,9 @@ export const solutionsData: SolutionItem[] = [
     techStack: ['PHP 8.2', 'Node.js', 'PostgreSQL', 'Docker', 'SEFAZ API'],
     plans: [
       {
-        name: 'Licença Código-Fonte (Pré-venda)',
-        price: 'R$ 297',
-        period: 'valor de pré-venda',
+        name: 'Licença Código-Fonte (Pré-venda PDI)',
+        price: 'R$ 690',
+        period: 'valor de pré-venda (R$ 1.200 no lançamento)',
         description: 'Acesso antecipado ao microserviço com documentação de endpoints e exemplos em cURL/Node/PHP.',
         features: [
           'Código-fonte do microserviço completo',
@@ -322,8 +322,8 @@ export const solutionsData: SolutionItem[] = [
       },
       {
         name: 'Implantação & Homologação',
-        price: 'R$ 890',
-        period: 'serviço assistido',
+        price: 'R$ 2.490',
+        period: 'serviço assistido completo',
         description: 'Configuração do microserviço na sua infraestrutura e suporte para homologação do primeiro lote de notas.',
         features: [
           'Tudo do plano Código-Fonte',
@@ -350,7 +350,7 @@ export const solutionsData: SolutionItem[] = [
     summary: 'Conjunto de scripts e rotinas de auditoria de performance para identificar queries lentas, gargalos de I/O e reduzir o MTTR em até 70%.',
     status: 'Disponível',
     pdiBadge: 'Database Engineering',
-    priceFrom: 'R$ 97',
+    priceFrom: 'R$ 197',
     problem: 'Sistemas corporativos começam a ficar lentos quando o volume de dados cresce. Desenvolvedores costumam culpar o hardware ou o ORM sem saber ler o EXPLAIN ANALYZE ou identificar queries sem índice.',
     solution: 'Toolkit prático com queries analíticas prontas, scripts de monitoramento de tabelas inchadas (bloat), detecção de consultas que causam lock e gerador de índices parciais.',
     features: [
@@ -364,7 +364,7 @@ export const solutionsData: SolutionItem[] = [
     plans: [
       {
         name: 'Toolkit Completo + Guia',
-        price: 'R$ 97',
+        price: 'R$ 197',
         period: 'download imediato',
         description: 'Acesso instantâneo a todos os scripts SQL organizados por categoria e ao guia prático de tuning.',
         features: [
@@ -374,7 +374,20 @@ export const solutionsData: SolutionItem[] = [
           'Uso ilimitado em quantos bancos precisar'
         ],
         highlighted: true,
-        ctaText: 'Adquirir Toolkit por R$ 97'
+        ctaText: 'Adquirir Toolkit por R$ 197'
+      },
+      {
+        name: 'Toolkit + Sessão de Auditoria (1h30)',
+        price: 'R$ 890',
+        period: 'toolkit + diagnóstico ao vivo',
+        description: 'Além de todos os scripts, receba 1h30 de auditoria remota ao vivo no banco de dados da sua empresa.',
+        features: [
+          'Tudo do Toolkit Completo',
+          'Diagnóstico ao vivo via Google Meet / Zoom',
+          'Análise das 5 queries mais lentas do seu sistema',
+          'Recomendações e criação de índices assistida'
+        ],
+        ctaText: 'Toolkit com Auditoria'
       }
     ],
     faqs: [
