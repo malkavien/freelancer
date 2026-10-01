@@ -1,5 +1,6 @@
 import React from 'react';
-import { Terminal, ArrowUp, Github, Linkedin, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Terminal, ArrowUp, Github, Linkedin, MessageSquare, Sparkles } from 'lucide-react';
 import { profileData } from '../data/profile';
 
 export const Footer: React.FC = () => {
@@ -14,19 +15,30 @@ export const Footer: React.FC = () => {
           
           {/* Logo & Headline */}
           <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="flex items-center gap-2 text-white font-bold text-base">
+            <Link to="/" className="flex items-center gap-2 text-white font-bold text-base hover:text-emerald-400 transition-colors">
               <span className="flex items-center justify-center w-7 h-7 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                 <Terminal className="w-4 h-4" />
               </span>
               <span>rafael<span className="text-emerald-400">.dev</span></span>
-            </div>
+            </Link>
             <p className="text-slate-500 text-xs font-sans text-center md:text-left">
-              Construindo arquiteturas resilientes, APIs escaláveis e soluções financeiras.
+              Construindo arquiteturas resilientes, APIs escaláveis e soluções de software para empresas.
             </p>
           </div>
 
+          {/* Quick Links */}
+          <div className="flex items-center gap-4 text-xs">
+            <a href="/#sobre" className="hover:text-emerald-400 transition-colors">Sobre</a>
+            <a href="/#projetos" className="hover:text-emerald-400 transition-colors">Projetos</a>
+            <Link to="/solucoes" className="text-cyan-300 hover:text-cyan-200 flex items-center gap-1">
+              <Sparkles className="w-3 h-3" />
+              <span>Soluções (PDI)</span>
+            </Link>
+            <a href="/#contato" className="hover:text-emerald-400 transition-colors">Contato</a>
+          </div>
+
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href={profileData.github}
               target="_blank"

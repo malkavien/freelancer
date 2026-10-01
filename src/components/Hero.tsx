@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   ArrowRight,
-  Terminal,
   CheckCircle2,
   Zap,
   Copy,
@@ -80,21 +80,27 @@ export const Hero: React.FC = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3.5 pt-3 w-full sm:w-auto">
               <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/25"
+                href="#projetos"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/25"
               >
-                <span>Solicitar Proposta / Freelance</span>
+                <span>Ver Projetos</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <a
-                href="#playground"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/90 text-white font-medium text-sm border border-slate-700 transition-colors"
+              <Link
+                to="/solucoes"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 font-semibold text-sm border border-cyan-500/30 transition-all hover:border-cyan-500/60"
               >
-                <Terminal className="w-4 h-4 text-emerald-400" />
-                <span>Testar API Interativa</span>
+                <span>Conhecer Soluções</span>
+              </Link>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white font-mono text-xs border border-slate-800 transition-colors"
+              >
+                <span>WhatsApp</span>
               </a>
 
               <button
@@ -110,7 +116,7 @@ export const Hero: React.FC = () => {
                 ) : (
                   <>
                     <Copy className="w-3.5 h-3.5" />
-                    <span>rafael.pomeu@gmail.com</span>
+                    <span>Copiar E-mail</span>
                   </>
                 )}
               </button>
